@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Send Email"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+                 />
+
+    <Button
+        android:id="@+id/sms"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Send Sms"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+  />
+
+    <Button
+        android:id="@+id/googlemap"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="googlemap"
+        app:layout_constraintLeft_toLeftOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email"
+       />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Make call"
+        app:layout_constraintLeft_toLeftOf="@id/sms"
+        app:layout_constraintTop_toBottomOf="@id/sms"
+      />
+
+    <Button
+        android:id="@+id/picature"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="picature"
+        app:layout_constraintLeft_toLeftOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/googlemap"
+        />
+
+    <Button
+        android:id="@+id/link"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="openlink"
+        app:layout_constraintLeft_toLeftOf="@id/sms"
+        app:layout_constraintTop_toBottomOf="@id/call"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="309dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
